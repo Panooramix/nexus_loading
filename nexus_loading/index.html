@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXUS — ZONE 51</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#05030a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{background-image:linear-gradient(180deg,rgba(4,2,10,.08),rgba(4,2,10,.25)),url("assets/background.png");background-position:center;background-size:cover}
+.vignette{position:absolute;inset:0;box-shadow:inset 0 0 180px 45px #020106;pointer-events:none}
+.hud{position:absolute;left:50%;bottom:7.5%;transform:translateX(-50%);width:min(520px,68vw);text-align:center;text-shadow:0 2px 10px #000}
+.status{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#eee;margin-bottom:13px}
+.track{height:9px;border:1px solid rgba(220,190,255,.7);border-radius:99px;background:rgba(5,3,12,.8);overflow:hidden;box-shadow:0 0 18px rgba(160,35,255,.25)}
+.fill{height:100%;width:8%;border-radius:99px;background:linear-gradient(90deg,#7615d8,#d9a5ff,#8c20ff);box-shadow:0 0 18px #9a25ff;animation:load 18s ease-in-out infinite alternate}
+.tip{margin-top:12px;font-size:12px;letter-spacing:.08em;color:#d8c9e8}
+@keyframes load{from{width:8%}to{width:92%}}
+@media(max-height:600px){.hud{bottom:4%}.status{margin-bottom:7px}.tip{margin-top:7px}}
+</style>
+</head>
+<body>
+<div class="vignette"></div>
+<div class="hud">
+  <div class="status">Connexion à la zone sécurisée…</div>
+  <div class="track"><div class="fill"></div></div>
+  <div class="tip">NEXUS • ZONE 51 — Préparez-vous à l’infiltration</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+NEXUS — ZONE 51 | Loading screen Garry's Mod
+
+CONTENU
+- index.html : page de chargement
+- assets/background.png : image de fond
+
+INSTALLATION
+1. Décompressez ce dossier.
+2. Hébergez le dossier nexus_zone51_loading sur un hébergement web HTTPS (par exemple GitHub Pages ou votre propre site).
+3. Vérifiez que l'URL publique ouvre bien index.html et que /assets/background.png se charge.
+4. Dans la configuration de votre serveur Garry's Mod, ajoutez/remplacez :
+   sv_loadingurl "https://VOTRE-DOMAINE/index.html"
+5. Redémarrez le serveur, puis testez en rejoignant avec un client.
+
+IMPORTANT
+Le fichier sv_loadingurl doit pointer vers une page web accessible publiquement. Mettre le HTML uniquement dans garrysmod/addons ne suffit pas à l'afficher aux joueurs.
+La barre dans cette version est décorative/animée : elle ne représente pas le vrai pourcentage de téléchargement.
